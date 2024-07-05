@@ -12,7 +12,7 @@ export default function TabsIndex() {
 
       <FlatList
         data={data}
-        contentContainerClassName="gap-3"
+        contentContainerStyle={{ maxWidth: 512, gap: 10, width: "100%" }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <PostListItems post={item} />}
       />
